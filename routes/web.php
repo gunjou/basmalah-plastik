@@ -17,8 +17,8 @@ Route::get('/login', function () {
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 
-Route::get('/stock', [StockController::class, 'index'])->name('stock.index');
-Route::get('/hutang', [HutangController::class, 'index'])->name('hutang.index');
+Route::get('/stock', [StockController::class, 'index'])->name('stock');
+Route::get('/hutang', [HutangController::class, 'index'])->name('hutang');
 
 
 

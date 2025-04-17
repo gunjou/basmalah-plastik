@@ -11,7 +11,7 @@
     @include('components.sidebar')
     @include('components.navbar')
 
-    <div class="ml-64 pt-20 px-6">
+    <div class="ml-64 pt-2 px-6">
         @yield('content')
     </div>
 

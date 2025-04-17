@@ -15,6 +15,6 @@ class HutangController extends Controller
             ['no' => '1','nama_barang' => 'Barang A', 'jumlah_stock' => '112', 'satuan'=>'pack', 'harga'=>'40.000'],
         ];
 
-        return view('hutang.index', compact('hutangs'));
+        return view('hutang', compact('hutangs'));
     }
 }

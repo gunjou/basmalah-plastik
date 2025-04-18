@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1 class="text-2xl font-bold text-gray-700 mb-4">Transaksi Penjualan</h1>
-    <div class="rounded-[20px] mb-4  mr-2 ml-2 px-2 shadow-md bg-white w-full h-full">
+    <h1 class="text-2xl font-bold text-gray-700 mb-2">Transaksi Penjualan</h1>
+    <div class="rounded-[20px] mb-4 mr-2 ml-2 px-2 shadow-md bg-white w-full h-full">
     <div class="flex justify-between items-center pt-2 px-4 pb-2 text-sm font-semibold">
     <div>
         12 Januari 2025
@@ -14,7 +14,7 @@
 </div>
    
 <div class="bg-white shadow rounded-lg p-4 mx-4 overflow-y-auto max-h-50">
-    <table class="table-auto w-full text-sm divide-y divide-gray-200">
+    <table class="table-auto w-full text-sm divide-y divide-gray-200 ">
     <thead class="bg-gray-600 text-white">
                 <tr>
                 <th class="px-2 py-1 text-center text-xs font-medium uppercase rounded-l-lg">No</th>

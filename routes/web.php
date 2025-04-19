@@ -19,6 +19,8 @@ Route::get('/home', [HomeController::class, 'index'])->name('home');
 
 Route::get('/stock', [StockController::class, 'index'])->name('stock');
 Route::get('/hutang', [HutangController::class, 'index'])->name('hutang');
+Route::get('/laporan', [HomeController::class, 'index'])->name('laporan');
+
 
 
 

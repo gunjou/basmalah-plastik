@@ -5,12 +5,14 @@
     <title>Login</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="h-screen bg-gradient-to-b from-green-600 via-green-200 to-green-100">
-
-    <div class="flex h-full">
+<body class="h-screen bg-gradient-to-b from-[#72BDAF] to-[#1E686D]" >
+<div class="absolute bottom-0 left-0 w-full">
+        <img src="images/wave.png" alt="#">
+    </div>    
+<div class="flex h-full" >
       
         <div class="w-1/2 flex items-center justify-center">
-            <div class="bg-white p-8 rounded-[20px] shadow-lg w-full max-w-md">
+            <div class="bg-white p-8 rounded-[20px] shadow-lg w-full max-w-md z-0">
                 <h2 class="text-2xl font-bold text-left text-gray-700 ">Login</h2>
                 <div class="mt-2 mb-6 text-sm">
                     <span>
@@ -37,7 +39,7 @@
 
                     <div class="flex justify-center">
                         <button type="submit"
-                            class="w-20 px-4 py-2 font-semibold text-white bg-green-600 rounded-[15px] hover:bg-green-700">
+                            class="w-20 px-4 py-2 font-semibold text-white bg-[#1E686D] rounded-[15px] hover:bg-[#72BDAF]">
                             Login
                         </button>
                     </div>
@@ -46,12 +48,11 @@
         </div>
 
         <!-- KANAN: OPSIONAL -->
-    <div class="w-1/2 flex my-20 justify-center">
+    <div class="w-1/2 flex items-center justify-center">
             <h1 class="text-3xl font-bold text-white">BASMALAH PLASTIK
-            <div class="flex items-center justify-center mt-4"> <img src="{{ asset('images/logo.png') }}" alt="Logo" class="w-80 h-auto">
+            <div class="flex items-center justify-center mt-4"> <img src="{{ asset('images/kasir.png') }}" alt="Logo" class="w-80 h-auto">
             </div>
             </h1>
-            
         </div>
         
     </div>

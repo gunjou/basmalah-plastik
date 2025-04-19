@@ -15,7 +15,7 @@
    
 <div class="bg-white shadow rounded-lg p-4 mx-4 overflow-y-auto max-h-90">
     <table class="table-auto w-full text-sm divide-y divide-gray-200">
-    <thead class="bg-gray-600 text-white">
+    <thead class="bg-[#DFDFDF] text-black">
                 <tr>
                 <th class="px-2 py-1 text-center text-xs font-medium uppercase rounded-l-lg">No</th>
                     <th class="px-2 py-1 text-center text-xs font-medium uppercase">Nama Pelanggan</th>
@@ -31,8 +31,8 @@
                         <td class="px-2 py-1 text-center text-xs text-gray-800">{{ $hutang['nama_pelanggan'] }}</td>
                         <td class="px-2 py-1 text-center text-xs text-gray-600">{{ $hutang['jumlah_hutang'] }}</td>
                         <td class="px-2 py-1 text-center text-xs text-gray-600">{{ $hutang['status'] }}</td>
-                        <td class="px-2 py-1 text-center space-x-2"><button class="bg-green-500 hover:bg-green-600 text-white text-xs font-semibold py-1 px-2 rounded">
-                        Tambah</button><button class="bg-yellow-500 hover:bg-yellow-600 text-white text-xs font-semibold py-1 px-2 rounded">
+                        <td class="px-2 py-1 text-center space-x-2"><button class="bg-green-500 hover:bg-green-600 text-white text-xs font-semibold py-0.5 px-1 rounded">
+                        Tambah</button><button class="bg-yellow-500 hover:bg-yellow-600 text-white text-xs font-semibold py-0.5 px-1 rounded" data-toggle="modal" data-target="#lunasiModal">
                             Lunasi</button>
                         </tr>
                 @endforeach
@@ -41,9 +41,8 @@
       
     </div>
     <div class="pt-2 pl-4 pb-2 text-sm font-semibold">
-        <button class="flex items-center bg-blue-500 text-[10px] text-white px-2 py-2 rounded-[15px] hover:bg-blue-600">Catat Hutang Baru</button>
+        <button class="flex items-center text-[10px] text-white px-2 py-2 rounded-[15px] bg-[#1E686D] hover:bg-[#72BDAF]">Catat Hutang Baru</button>
     </div>
 </div>
-
 </div>
 @endsection

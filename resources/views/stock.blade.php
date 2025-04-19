@@ -15,7 +15,7 @@
    
 <div class="bg-white shadow rounded-lg p-4 mx-4 overflow-y-auto max-h-90">
     <table class="table-auto w-full text-sm divide-y divide-gray-200">
-    <thead class="bg-gray-600 text-white">
+    <thead class="bg-[#DFDFDF] text-black">
                 <tr>
                 <th class="px-2 py-1 text-center text-xs font-medium uppercase rounded-l-lg">No</th>
                     <th class="px-2 py-1 text-center text-xs font-medium uppercase">Nama Barang</th>
@@ -35,8 +35,8 @@
                         <td class="px-2 py-1 text-center text-xs text-gray-600">{{ $stock['satuan'] }}</td>
                         <td class="px-2 py-1 text-center text-xs text-gray-600">{{ $stock['harga'] }}</td>
                         <td class="px-2 py-1 text-center text-xs text-gray-600">{{ $stock['no_batch'] }}</td>
-                        <td class="px-2 py-1 text-center space-x-2"><button class="bg-green-500 hover:bg-green-600 text-white text-xs font-semibold py-1 px-2 rounded">
-                        <i class="fa-solid fa-pen-to-square"></i></button><button class="bg-red-500 hover:bg-red-600 text-white text-xs font-semibold py-1 px-2 rounded">
+                        <td class="px-2 py-1 text-center space-x-2"><button class="bg-green-500 hover:bg-green-600 text-white text-xs font-semibold py-0.5 px-1 rounded">
+                        <i class="fa-solid fa-pen-to-square"></i></button><button class="bg-red-500 hover:bg-red-600 text-white text-xs font-semibold py-0.5 px-1 rounded">
                         <i class="fa-solid fa-trash"></i></button>
                         </tr>
                 @endforeach
@@ -45,7 +45,7 @@
       
     </div>
     <div class="pt-2 pl-4 pb-2 text-sm font-semibold">
-        <button class="flex items-center bg-blue-500 text-[10px] text-white px-2 py-2 rounded-[15px] hover:bg-blue-600">Tambah Stock Baru</button>
+        <button class="flex items-center bg-[#1E686D] hover:bg-[#72BDAF] text-[10px] text-white px-2 py-2 rounded-[15px]">Tambah Stock Baru</button>
     </div>
 </div>
 

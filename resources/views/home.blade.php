@@ -5,7 +5,7 @@
     <div class="rounded-[20px] mb-4 mr-2 ml-2 px-2 shadow-md bg-white w-full h-full">
     <div class="flex justify-between items-center pt-2 px-4 pb-2 text-sm font-semibold">
     <div>
-        12 Januari 2025
+        Selasa, 12 Januari 2025
     </div>
     <div>
         <input type="text" placeholder="Search"
@@ -15,7 +15,7 @@
    
 <div class="bg-white shadow rounded-lg p-4 mx-4 overflow-y-auto max-h-50">
     <table class="table-auto w-full text-sm divide-y divide-gray-200 ">
-    <thead class="bg-gray-600 text-white">
+    <thead class="bg-[#DFDFDF] text-black">
                 <tr>
                 <th class="px-2 py-1 text-center text-xs font-medium uppercase rounded-l-lg">No</th>
                     <th class="px-2 py-1 text-center text-xs font-medium uppercase">Nama Barang</th>
@@ -33,7 +33,7 @@
                         <td class="px-2 py-1 text-center text-xs text-gray-600">{{ $stock['jumlah_stock'] }}</td>
                         <td class="px-2 py-1 text-center text-xs text-gray-600">{{ $stock['satuan'] }}</td>
                         <td class="px-2 py-1 text-center text-xs text-gray-600">{{ $stock['harga'] }}</td>
-                        <td class="px-2 py-1 text-center"><button class="bg-blue-500 hover:bg-blue-600 text-white text-xs font-semibold py-1 px-2 rounded">
+                        <td class="px-2 py-1 text-center"><button class="bg-[#1E686D] hover:bg-[#72BDAF] text-white text-xs font-semibold py-0.5 px-1 rounded">
                             Pilih</button>
                     </tr>
                 @endforeach

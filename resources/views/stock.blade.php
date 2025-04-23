@@ -35,9 +35,36 @@
                         <td class="px-2 py-1 text-center text-xs text-gray-600">{{ $stock['satuan'] }}</td>
                         <td class="px-2 py-1 text-center text-xs text-gray-600">{{ $stock['harga'] }}</td>
                         <td class="px-2 py-1 text-center text-xs text-gray-600">{{ $stock['no_batch'] }}</td>
-                        <td class="px-2 py-1 text-center space-x-2"><button class="bg-green-500 hover:bg-green-600 text-white text-xs font-semibold py-0.5 px-1 rounded">
-                        <i class="fa-solid fa-pen-to-square"></i></button><button class="bg-red-500 hover:bg-red-600 text-white text-xs font-semibold py-0.5 px-1 rounded">
-                        <i class="fa-solid fa-trash"></i></button>
+                        <td class="px-2 py-1 text-center space-x-2">
+                        <div x-data="{ open: false }">
+                        <button @click="open = true" class="bg-green-500 hover:bg-green-600 text-white text-xs font-semibold py-0.5 px-1 rounded">
+                        <i class="fa-solid fa-pen-to-square"></i> Edit</button>    
+                     <!-- Modal -->
+    <div x-show="open" class="fixed inset-0 backdrop-blur-sm flex items-center justify-center z-50">
+        <div class="bg-white p-6 rounded-[20px] shadow-lg w-full max-w-md">
+            <h2 class="text-xl font-semibold mb-4">Edit Stock</h2>
+            <form>
+                <input type="text" placeholder="Nama Barang" class="w-full border p-2 rounded mb-2">
+                <input type="number" placeholder="Jumlah Stock" class="w-full border p-2 rounded mb-2">
+                <input type="number" placeholder="Satuan" class="w-full border p-2 rounded mb-2">
+                <input type="number" placeholder="Harga" class="w-full border p-2 rounded mb-2">
+                <input type="number" placeholder="No Batch" class="w-full border p-2 rounded mb-2">
+     
+                <div class="flex justify-between items-center mt-4">
+                <div class="space-x-2">
+                    <button type="submit" class="bg-blue-600 text-white px-3 py-1 rounded-[20px]"><i class="fa-solid fa-plus"></i> Simpan</button>
+                    <button type="button" @click="open = false" class="bg-gray-500 text-white px-3 py-1 rounded-[20px]">Batal</button>
+                </div>
+                <button type="button" class="bg-red-600 text-white px-3 py-1 rounded-[20px]">
+                    <i class="fa-solid fa-trash mr-1"></i> Hapus
+                </button>
+            </div>   
+            </form>
+        </div>
+    </div>
+                    </div>  
+                        
+                        
                         </tr>
                 @endforeach
             </tbody>
@@ -45,7 +72,28 @@
       
     </div>
     <div class="pt-2 pl-4 pb-2 text-sm font-semibold">
-        <button class="flex items-center bg-[#1E686D] hover:bg-[#72BDAF] text-[10px] text-white px-2 py-2 rounded-[15px]">Tambah Stock Baru</button>
+    <div x-data="{ open: false }">
+    <!-- Tombol trigger -->
+    <button @click="open = true" class="flex items-center bg-[#1E686D] hover:bg-[#72BDAF] text-[10px] text-white px-2 py-2 rounded-[15px]">
+        Tambah Stock Baru
+    </button>
+
+    <!-- Modal -->
+    <div x-show="open" class="fixed inset-0 backdrop-blur-sm flex items-center justify-center z-50">
+        <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-md">
+            <h2 class="text-xl font-semibold mb-4">Tambah Stock Baru</h2>
+            <form>
+                <input type="text" placeholder="Nama Barang" class="w-full border p-2 rounded mb-2">
+                <input type="number" placeholder="Jumlah" class="w-full border p-2 rounded mb-2">
+                <!-- Tambahkan input lainnya sesuai kebutuhan -->
+                <div class="flex justify-end mt-4">
+                    <button type="button" @click="open = false" class="bg-gray-500 text-white px-3 py-1 rounded-[20px] mr-2">Batal</button>
+                    <button type="submit" class="bg-blue-600 text-white px-3 py-1 rounded-[20px]">Simpan</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
     </div>
 </div>
 

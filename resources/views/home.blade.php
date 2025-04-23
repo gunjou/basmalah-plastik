@@ -71,7 +71,7 @@
 
       <div class="flex justify-between w-72">
         <label class="text-sm text-gray-700">Diskon</label>
-        <input type="text" value="10 %" class=" text-sm text-end border rounded px-2 w-40" readonly />
+        <input type="text" value="10 %" class=" text-sm text-end border rounded px-2 w-40" />
       </div>
 
       <div class="flex justify-between w-72">

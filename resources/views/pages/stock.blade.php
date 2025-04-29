@@ -41,7 +41,11 @@
                         <i class="fa-solid fa-pen-to-square"></i> Edit</button>    
                      <!-- Modal -->
     <div x-show="open" class="fixed inset-0 backdrop-blur-sm flex items-center justify-center z-50">
-        <div class="bg-white p-6 rounded-[20px] shadow-lg w-full max-w-md">
+        <div class="bg-white p-6 rounded-[20px] shadow-lg w-full max-w-md relative">
+            <!-- Icon silang untuk menutup modal -->
+            <button @click="open = false" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
             <h2 class="text-xl font-semibold mb-4">Edit Stock</h2>
             <form>
                 <input type="text" placeholder="Nama Barang" class="w-full border p-2 rounded mb-2">
@@ -49,16 +53,19 @@
                 <input type="number" placeholder="Satuan" class="w-full border p-2 rounded mb-2">
                 <input type="number" placeholder="Harga" class="w-full border p-2 rounded mb-2">
                 <input type="number" placeholder="No Batch" class="w-full border p-2 rounded mb-2">
-     
                 <div class="flex justify-between items-center mt-4">
-                <div class="space-x-2">
-                    <button type="submit" class="bg-blue-600 text-white px-3 py-1 rounded-[20px]"><i class="fa-solid fa-plus"></i> Simpan</button>
-                    <button type="button" @click="open = false" class="bg-gray-500 text-white px-3 py-1 rounded-[20px]">Batal</button>
+                    <div class="space-x-2">
+                        <button type="submit" class="bg-blue-600 text-white px-3 py-1 rounded-[20px]">
+                            <i class="fa-solid fa-plus"></i> Simpan
+                        </button>
+                        <button type="button" @click="open = false" class="bg-gray-500 text-white px-3 py-1 rounded-[20px]">
+                            Batal
+                        </button>
+                    </div>
+                    <button type="button" class="bg-red-600 text-white px-3 py-1 rounded-[20px]">
+                        <i class="fa-solid fa-trash mr-1"></i> Hapus
+                    </button>
                 </div>
-                <button type="button" class="bg-red-600 text-white px-3 py-1 rounded-[20px]">
-                    <i class="fa-solid fa-trash mr-1"></i> Hapus
-                </button>
-            </div>   
             </form>
         </div>
     </div>

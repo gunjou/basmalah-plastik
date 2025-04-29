@@ -28,6 +28,12 @@ class HutangController extends Controller
             ['no' => '16','nama_pelanggan' => 'L', 'jumlah_hutang' => '-', 'status'=>'Lunas'],
         ];
 
-        return view('hutang', compact('hutangs'));
+        $detailHutang = [
+            ['pencatatan' =>'12-03-2025','utang' =>'100.000','membayarkan' =>'-'],
+            ['pencatatan' =>'13-03-2025','utang' =>'-','membayarkan' =>'10.000'],
+            ['pencatatan' =>'14-03-2025','utang' =>'-','membayarkan' =>'10.000'],
+    ];
+
+        return view('pages.hutang', compact('hutangs','detailHutang'));
     }
 }

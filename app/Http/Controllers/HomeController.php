@@ -25,6 +25,6 @@ class HomeController extends Controller
             ['jumlah_barang' => '2','nama_barang' => 'Barang D', 'harga'=>'RP. 40.000'],
         ];
 
-        return view('home', compact('stocks','pembelian'));
+        return view('pages.home', compact('stocks','pembelian'));
     }
 }

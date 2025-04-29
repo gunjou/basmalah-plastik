@@ -28,6 +28,6 @@ class stockController extends Controller
 
         ];
 
-        return view('stock', compact('stocks'));
+        return view('pages.stock', compact('stocks'));
     }
 }

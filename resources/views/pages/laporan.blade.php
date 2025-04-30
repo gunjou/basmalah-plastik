@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1 class="text-2xl font-bold text-gray-700 mb-2">Transaksi Penjualan</h1>
+    <h1 class="text-2xl font-bold text-gray-700 mb-2">Laporan Penjualan</h1>
     <div class="rounded-[20px] mb-4 mr-2 ml-2 px-2 shadow-md bg-white w-full h-full">
     <div class="flex justify-between items-center pt-2 px-4 pb-2 text-sm font-semibold">
     <div>

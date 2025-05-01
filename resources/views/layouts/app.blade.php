@@ -6,7 +6,7 @@
     <title>{{ $title ?? 'Basmalah Plastik' }}</title>
     @vite('resources/css/app.css') {{-- Tailwind --}}
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-
+    
 </head>
 <body class="bg-gray-100">
 
@@ -16,6 +16,5 @@
     <div class="ml-64 pt-17 px-6">
         @yield('content')
     </div>
-
 </body>
 </html>

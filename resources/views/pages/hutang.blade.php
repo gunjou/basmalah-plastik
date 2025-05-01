@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1 class="text-2xl font-bold text-gray-700 mb-2">Daftar Hutang</h1>
+    <h1 class="text-2xl font-bold text-gray-700 mb-1">Daftar Hutang</h1>
+    <p class="text-sm text-gray-500 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa eveniet laudantium molestias officiis possimus illo?</p>
     <div class="rounded-[20px] mb-4 mr-2 ml-2 px-2 shadow-md bg-white w-full h-full">
         <div class="flex justify-between items-center pt-2 px-4 pb-2 text-sm font-semibold">
             <div>12 Januari 2025</div>
@@ -42,11 +43,11 @@
                                                 class="absolute top-2 right-4 text-gray-500 hover:text-gray-700">
                                                 <i class="fa-solid fa-xmark text-lg"></i>
                                             </button>
-                                            <div class="mt-2 py-2 mb-2 px-2 shadow-md bg-blue-500 w-full h-full">
+                                            <div class="mt-2 py-2 mb-2 px-2 shadow-md bg-green-500 w-full h-full">
                                                 <div class="flex justify-between ml-2">
                                                     <h2 class="text-white text-lg font-bold">Gibran</h2>
                                                     <button type="button"
-                                                        class="bg-blue-700 text-xs text-white px-3 py-1 rounded-[20px]">
+                                                        class="bg-green-700 text-xs text-white px-3 py-1 rounded-[20px]">
                                                         <i class="fa-solid fa-pen-to-square mr-1 text-xs"></i> Ubah Nama
                                                         Pelanggan
                                                     </button>

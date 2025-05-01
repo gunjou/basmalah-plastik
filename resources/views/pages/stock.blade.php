@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1 class="text-2xl font-bold text-gray-700 mb-2">Stock</h1>
+    <h1 class="text-2xl font-bold text-gray-700 mb-1">Stock</h1>
+    <p class="text-sm text-gray-500 mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, optio.</p>
     <div class="rounded-[20px] mb-4 mr-2 ml-2 px-2 shadow-md bg-white w-full h-full">
     <div class="flex justify-between items-center pt-2 px-4 pb-2 text-sm font-semibold">
     <div>
@@ -92,6 +93,9 @@
             <form>
                 <input type="text" placeholder="Nama Barang" class="w-full border p-2 rounded mb-2">
                 <input type="number" placeholder="Jumlah" class="w-full border p-2 rounded mb-2">
+                <input type="number" placeholder="Satuan" class="w-full border p-2 rounded mb-2">
+                <input type="number" placeholder="Harga" class="w-full border p-2 rounded mb-2">
+                <input type="number" placeholder="No Batch" class="w-full border p-2 rounded mb-2">
                 <!-- Tambahkan input lainnya sesuai kebutuhan -->
                 <div class="flex justify-end mt-4">
                     <button type="button" @click="open = false" class="bg-gray-500 text-white px-3 py-1 rounded-[20px] mr-2">Batal</button>

@@ -9,6 +9,7 @@
         <!-- Total Penjualan -->
          
         <div class="md:col-span-2 flex flex-col justify-center">
+        
             <h2 class="text-2xl font-semibold text-gray-800">Rp 1.600.000.000</h2>
             <p class="text-gray-500">Total Penjualan</p>
         </div>
@@ -41,8 +42,8 @@
         <!-- Tanggal Mulai -->
         <div class="w-full md:w-1/2 mt-4">
             <label for="start_date" class="block mb-2 text-sm font-medium text-gray-900">Tanggal Mulai</label>
-            <input name="start_date" type="date" id="start_date"
-                class="datepicker bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+            <input name="start_date" type="date" id="start_date" aia-placeholder="Select date"
+                class="datepicker bg-gray-50 border border-gray-300 text-gray-400 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                 required>
         </div>
 
@@ -50,7 +51,7 @@
         <div class="w-full md:w-1/2 mt-4">
             <label for="end_date" class="block mb-2 text-sm font-medium text-gray-900">Tanggal Selesai</label>
             <input name="end_date" type="date" id="end_date"
-                class="datepicker bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                class="datepicker bg-gray-50 border border-gray-300 text-gray-400 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                 required>
         </div>
     </div>

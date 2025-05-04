@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Carbon\Carbon;
 
 class HomeController extends Controller
 {
@@ -17,13 +18,17 @@ class HomeController extends Controller
         ];
 
         $pembelian=[
-            ['jumlah_barang' => '3','nama_barang' => 'Barang A', 'harga'=>'RP. 40.000'],
-            ['jumlah_barang' => '2','nama_barang' => 'Barang B', 'harga'=>'RP. 40.000'],
-            ['jumlah_barang' => '3','nama_barang' => 'Barang A', 'harga'=>'RP. 40.000'],
-            ['jumlah_barang' => '2','nama_barang' => 'Barang B', 'harga'=>'RP. 40.000'],
-            ['jumlah_barang' => '1','nama_barang' => 'Barang C', 'harga'=>'RP. 40.000'],
-            ['jumlah_barang' => '2','nama_barang' => 'Barang D', 'harga'=>'RP. 40.000'],
+            ['jumlah_barang' => '3','nama_barang' => 'Barang A', 'harga'=>' 40.000'],
+            ['jumlah_barang' => '2','nama_barang' => 'Barang B', 'harga'=>' 40.000'],
+            ['jumlah_barang' => '3','nama_barang' => 'Barang A', 'harga'=>' 40.000'],
+            ['jumlah_barang' => '2','nama_barang' => 'Barang B', 'harga'=>' 40.000'],
+            ['jumlah_barang' => '1','nama_barang' => 'Barang C', 'harga'=>' 40.000'],
+            ['jumlah_barang' => '2','nama_barang' => 'Barang D', 'harga'=>' 40.000'],
         ];
+
+        
+Carbon::setLocale('id');
+
 
         return view('pages.home', compact('stocks','pembelian'));
     }

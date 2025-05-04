@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Carbon\Carbon;
 
 class LaporanController extends Controller
 {
@@ -93,6 +94,7 @@ class LaporanController extends Controller
         'catatan' => 'Akan dibayar minggu ini'
     ]
 ];
+Carbon::setLocale('id');
 
         return view('pages.laporan', compact('data_penjualan'));
     }

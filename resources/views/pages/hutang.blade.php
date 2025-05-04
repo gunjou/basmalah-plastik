@@ -5,7 +5,7 @@
     <p class="text-sm text-gray-500 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa eveniet laudantium molestias officiis possimus illo?</p>
     <div class="rounded-[20px] mb-4 mr-2 ml-2 px-2 shadow-md bg-white w-full h-full">
         <div class="flex justify-between items-center pt-2 px-4 pb-2 text-sm font-semibold">
-            <div>12 Januari 2025</div>
+        <p>{{ now()->translatedFormat('l, d F Y') }}</p>
             <div>
                 <input type="text" placeholder="Search"
                     class="border border-gray-300 rounded-[20px] px-3 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-blue-400" />
@@ -18,6 +18,7 @@
                     <tr>
                         <th class="px-2 py-1 text-center text-xs font-medium uppercase rounded-l-lg">No</th>
                         <th class="px-2 py-1 text-center text-xs font-medium uppercase">Nama Pelanggan</th>
+                        <th class="px-2 py-1 text-center text-xs font-medium uppercase">Nomer Telpon</th>
                         <th class="px-2 py-1 text-center text-xs font-medium uppercase">Jumlah Hutang</th>
                         <th class="px-2 py-1 text-center text-xs font-medium uppercase">Status</th>
                         <th class="px-2 py-1 text-center text-xs font-medium uppercase rounded-r-lg">Action</th>
@@ -28,7 +29,8 @@
                         <tr>
                             <td class="px-2 py-1 text-center text-xs text-gray-800">{{ $hutang['no'] }}</td>
                             <td class="px-2 py-1 text-center text-xs text-gray-800">{{ $hutang['nama_pelanggan'] }}</td>
-                            <td class="px-2 py-1 text-center text-xs text-gray-600">{{ $hutang['jumlah_hutang'] }}</td>
+                            <td class="px-2 py-1 text-center text-xs text-gray-800">{{ $hutang['no_hp'] }}</td>
+                            <td class="px-2 py-1 text-center text-xs text-gray-600">Rp. {{ $hutang['jumlah_hutang'] }}</td>
                             <td class="px-2 py-1 text-center text-xs text-gray-600">{{ $hutang['status'] }}</td>
                             <td class="px-2 py-1 text-center space-x-2">
                                 <div x-data="{ open: false }">
@@ -92,12 +94,16 @@
                                             <div class="flex justify-between items-center mt-4">
                                                 <div class="space-x-2">
                                                     <button type="submit"
-                                                        class="bg-blue-600 text-white px-3 py-1 rounded-[20px]">
+                                                        class="bg-blue-600 text-white text-[12px] px-3 py-1 rounded-[20px] hover:bg-blue-700">
                                                         <i class="fa-solid fa-plus"></i> Tambah Hutang
                                                     </button>
                                                     <button type="button" @click="open = false"
-                                                        class="bg-gray-500 text-white px-3 py-1 rounded-[20px]">
+                                                        class="bg-red-600 text-white text-[12px] px-3 py-1 rounded-[20px] hover:bg-red-700"><i class="fa-solid fa-money-bill"></i>
                                                         Bayar Hutang
+                                                    </button>
+                                                    <button type="button" @click="open = false"
+                                                        class="bg-green-600 text-white text-[12px] px-3 py-1 rounded-[20px] hover:bg-green-700"><i class="fa-brands fa-whatsapp"></i>
+                                                        Hubungi Pelanggan
                                                     </button>
                                                 </div>
                                             </div>
@@ -124,9 +130,11 @@
                         <button @click="openTambahHutang = false" class="absolute top-4 right-4 text-gray-500 hover:text-gray-700">
                             <i class="fa-solid fa-xmark text-lg"></i>
                         </button>
-                        <h2 class="text-xl font-semibold mb-4">Tambah Hutang</h2>
+                        <h2 class="text-xl font-semibold ">Tambah Hutang</h2>
+                        <p class="text-xs text-gray-500 mb-4">Tambahkan data pelanggan apabila belum ada</p>
                         <form>
                             <input type="text" placeholder="Nama Pelanggan" class="w-full border p-2 rounded mb-2">
+                            <input type="number" placeholder="Nomer Telpon" class="w-full border p-2 rounded mb-2">
                             <input type="number" placeholder="Jumlah Hutang" class="w-full border p-2 rounded mb-2">
                             <div class="flex justify-end space-x-2">
                                 <button type="submit" class="bg-blue-600 text-white px-3 py-1 rounded-[20px]">Simpan</button>

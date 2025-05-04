@@ -5,9 +5,7 @@
     <p class="text-sm text-gray-500 mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, optio.</p>
     <div class="rounded-[20px] mb-4 mr-2 ml-2 px-2 shadow-md bg-white w-full h-full">
     <div class="flex justify-between items-center pt-2 px-4 pb-2 text-sm font-semibold">
-    <div>
-        Selasa, 12 Januari 2025
-    </div>
+    <p>{{ now()->translatedFormat('l, d F Y') }}</p>
     <div>
         <input type="text" placeholder="Search"
             class="border border-gray-300 rounded-[20px] px-3 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-blue-400" />
@@ -33,7 +31,7 @@
                         <td class="px-2 py-1 text-center text-xs text-gray-800">{{ $stock['nama_barang'] }}</td>
                         <td class="px-2 py-1 text-center text-xs text-gray-600">{{ $stock['jumlah_stock'] }}</td>
                         <td class="px-2 py-1 text-center text-xs text-gray-600">{{ $stock['satuan'] }}</td>
-                        <td class="px-2 py-1 text-center text-xs text-gray-600">{{ $stock['harga'] }}</td>
+                        <td class="px-2 py-1 text-center text-xs text-gray-600">Rp. {{ $stock['harga'] }}</td>
                         <td class="px-2 py-1 text-center"><button class="bg-[#1E686D] hover:bg-[#72BDAF] text-white text-xs font-semibold py-0.5 px-1 rounded">
                             Pilih</button>
                     </tr>
@@ -52,7 +50,7 @@
                     <tr>
                         <td class="px-2 py-1 text-xs text-gray-800 ">{{ $beli['jumlah_barang'] }}</td>
                         <td class="px-2 py-1 text-xs text-gray-800">{{ $beli['nama_barang'] }}</td>
-                        <td class="px-2 py-1 text-xs text-gray-600 ">{{ $beli['harga'] }}</td>
+                        <td class="px-2 py-1 text-xs text-gray-600 ">Rp. {{ $beli['harga'] }}</td>
                         </tr>
                 @endforeach
             </tbody>

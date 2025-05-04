@@ -5,9 +5,7 @@
     <p class="text-sm text-gray-500 mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, optio.</p>
     <div class="rounded-[20px] mb-4 mr-2 ml-2 px-2 shadow-md bg-white w-full h-full">
     <div class="flex justify-between items-center pt-2 px-4 pb-2 text-sm font-semibold">
-    <div>
-        12 Januari 2025
-    </div>
+    <p>{{ now()->translatedFormat('l, d F Y') }}</p>
     <div>
         <input type="text" placeholder="Search"
             class="border border-gray-300 rounded-[20px] px-3 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-blue-400" />
@@ -57,7 +55,7 @@
                 <div class="flex justify-between items-center mt-4">
                     <div class="space-x-2">
                         <button type="submit" class="bg-blue-600 text-white px-3 py-1 rounded-[20px]">
-                            <i class="fa-solid fa-plus"></i> Simpan
+                            Simpan
                         </button>
                         <button type="button" @click="open = false" class="bg-gray-500 text-white px-3 py-1 rounded-[20px]">
                             Batal

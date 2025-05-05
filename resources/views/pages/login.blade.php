@@ -38,7 +38,7 @@
                     </div>
 
                     <div class="flex justify-center">
-                        <button type="submit"
+                        <button type="submit" href="/home"
                             class="w-20 px-4 py-2 font-semibold text-white bg-[#1E686D] rounded-[15px] hover:bg-[#72BDAF]">
                             Login
                         </button>

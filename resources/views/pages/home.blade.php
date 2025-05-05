@@ -60,40 +60,43 @@
    
   <div class="flex justify-end mt-4">
   <!-- Wrapper untuk 2 kolom -->
-  <div class="flex gap-16">
-    <!-- Kolom Kiri: Sub Total, Diskon, Total, Kembalian, Tombol -->
-    <div class="space-y-2">
-      <div class="flex justify-between w-72">
-        <label class="text-sm text-gray-700">Sub Total</label>
-        <input type="text" value="Rp. 80.000" class="text-sm text-end border rounded px-2 w-40" readonly />
-      </div>
+  <div class="flex flex-col md:flex-row gap-8 justify-between mt-4">
+    <!-- Kolom Kiri: Sub Total, Diskon, Total -->
+    <div class="space-y-4 w-full md:w-1/2 pr-4">
+        <div class="flex justify-between">
+            <label class="text-sm text-gray-700 pr-2">Sub Total</label>
+            <input type="text" value="Rp. 80.000" class="text-sm text-end border rounded px-2 w-40" readonly />
+        </div>
 
-      <div class="flex justify-between w-72">
-        <label class="text-sm text-gray-700">Diskon</label>
-        <input type="text" value="10 %" class=" text-sm text-end border rounded px-2 w-40" />
-      </div>
+        <div class="flex justify-between">
+            <label class="text-sm text-gray-700 pr-2">Diskon</label>
+            <input type="text" value="10 %" class="text-sm text-end border rounded px-2 w-40" />
+        </div>
 
-      <div class="flex justify-between w-72">
-        <label class=" text-sm text-gray-700 font-semibold">Total</label>
-        <input type="text" value="Rp. 72.000" class="text-sm text-end border rounded px-2 w-40 font-semibold" readonly />
-      </div>
+        <div class="flex justify-between">
+            <label class="text-sm text-gray-700 font-semibold pr-2">Total</label>
+            <input type="text" value="Rp. 72.000" class="text-sm text-end border rounded px-2 w-40 font-semibold" readonly />
+        </div>
     </div>
 
-    <!-- Kolom Kanan: Bayar -->
-    <div class="space-y-2 mr-4">
-      <div class="flex justify-between w-72">
-        <label class="text-sm text-gray-700">Bayar</label>
-        <input type="text" value="Rp. 100.000" class="text-sm text-end border rounded px-2 w-40" />
-      </div>
-      <div class="flex justify-between w-72">
-        <label class="text-gray-700">Kembalian</label>
-        <input type="text" value="Rp. 28.000" class="text-sm text-end border rounded px-2 w-40" readonly />
-      </div>
-      <div class="text-center mt-4 mb-4">
-        <button class="bg-black text-sm text-white px-4 py-2 rounded-lg">Cetak Struck</button>
-      </div>
+    <!-- Kolom Kanan: Bayar, Kembalian, Tombol -->
+    <div class="space-y-4 w-full md:w-1/2 pr-4">
+        <div class="flex justify-between">
+            <label class="text-sm text-gray-700 pr-2">Bayar</label>
+            <input type="text" value="Rp. 100.000" class="text-sm text-end border rounded px-2 w-40" />
+        </div>
+
+        <div class="flex justify-between">
+            <label class="text-sm text-gray-700 pr-2">Kembalian</label>
+            <input type="text" value="Rp. 28.000" class="text-sm text-end text-red-700 border rounded px-2 w-40" readonly />
+        </div>
+
+        <div class="text-center pt-4 pb-4">
+            <button class="bg-black text-sm text-white px-4 py-2 rounded-lg w-full md:w-auto transition duration-300 ease-in-out transform hover:bg-gray-800 hover:scale-105 hover:shadow-lg">
+                Cetak Struk
+            </button>
+        </div>
     </div>
-  </div>
 </div>
 
   </div>

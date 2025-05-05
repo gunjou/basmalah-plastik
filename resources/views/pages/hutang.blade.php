@@ -49,7 +49,7 @@
                                                 <div class="flex justify-between ml-2">
                                                     <h2 class="text-white text-lg font-bold">Gibran</h2>
                                                     <button type="button"
-                                                        class="bg-green-700 text-xs text-white px-3 py-1 rounded-[20px]">
+                                                        class="bg-green-700 text-xs text-white px-3 py-1 rounded-[20px] hover:bg-green-800 ">
                                                         <i class="fa-solid fa-pen-to-square mr-1 text-xs"></i> Ubah Nama
                                                         Pelanggan
                                                     </button>
@@ -61,7 +61,7 @@
                                                             <p class="text-red-500 font-semibold">Rp.5.000.000</p>
                                                         </div>
                                                         <button type="button"
-                                                            class="bg-yellow-500 mr-2 text-xs text-black mt-2 mb-2 px-3 py-1 rounded-[20px]">
+                                                            class="bg-yellow-500 mr-2 text-xs text-black mt-2 mb-2 px-3 py-1 rounded-[20px] hover:bg-yellow-600 ">
                                                             <i class="fa-solid fa-pen-to-square mr-1 text-xs"></i> Lunasi
                                                             Utang
                                                         </button>
@@ -120,7 +120,7 @@
             <!-- Tombol Tambah Hutang -->
             <div x-data="{ openTambahHutang: false }">
                 <button @click="openTambahHutang = true"
-                    class="flex items-center text-[10px] text-white px-2 py-2 rounded-[15px] bg-[#1E686D] hover:bg-[#72BDAF]">
+                    class="flex items-center text-[10px] text-white px-2 py-2 my-2 rounded-[15px] bg-[#1E686D]  md:w-auto transition duration-300 ease-in-out transform hover:bg-gray-800 hover:scale-105 hover:shadow-lg">
                     Catat Hutang Baru
                 </button>
 

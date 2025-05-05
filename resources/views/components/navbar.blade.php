@@ -1,4 +1,4 @@
-<nav class="bg-white h-15 shadow px-4 py-2 flex items-center fixed top-0 w-full">
+<nav class="bg-white h-15 shadow px-4 py-2 flex items-center fixed top-0 w-full z-20">
 
   <div class="ml-auto font-semibold">
     <img src="{{ asset('images/yakult.jpg') }}" alt="Profile" class="w-9 h-9 rounded-full object-cover border border-black"></div>

@@ -80,7 +80,7 @@
     <div class="pt-2 pl-4 pb-2 text-sm font-semibold">
     <div x-data="{ open: false }">
     <!-- Tombol trigger -->
-    <button @click="open = true" class="flex items-center bg-[#1E686D] hover:bg-[#72BDAF] text-[10px] text-white px-2 py-2 rounded-[15px]">
+    <button @click="open = true" class="flex items-center bg-[#1E686D] text-[10px] text-white px-2 py-2 my-2 rounded-[15px]  md:w-auto transition duration-300 ease-in-out transform hover:bg-gray-800 hover:scale-105 hover:shadow-lg">
         Tambah Stock Baru
     </button>
 
